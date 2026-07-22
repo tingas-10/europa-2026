@@ -24,8 +24,8 @@ const PENDING = [
 
 /* Itinerario día por día */
 const ITINERARY = [
-  { date: "Lun 24/08", city: "Buenos Aires → Londres", note: "Memi vuela EZE → LHR (American Airlines).", tag: "vuelo", accent: "london" },
-  { date: "Mar 25/08", city: "Londres", note: "Check-in en easyHotel London City Shoreditch, 15:00 hs. Memi en Londres, Tin todavía en Buenos Aires.", tag: "estadia", accent: "london" },
+  { date: "Lun 24/08", city: "Buenos Aires → Londres", note: "Memi despega de EZE 21:10 hs rumbo a Londres (American Airlines). Llega a LHR el 25/08 por la noche.", tag: "vuelo", accent: "london" },
+  { date: "Mar 25/08", city: "Londres", note: "Memi llega a Londres por la noche. Check-in en easyHotel London City Shoreditch disponible desde las 15:00 hs. Tin todavía en Buenos Aires.", tag: "estadia", accent: "london" },
   { date: "Mié 26/08", city: "Londres", note: "Día en Londres (Memi).", tag: "estadia", accent: "london" },
   { date: "Jue 27/08", city: "Buenos Aires → Madrid", note: "Tin vuela EZE → MAD, 13:25 hs, Plus Ultra PU502 (vuelo directo nocturno).", tag: "vuelo", accent: "london" },
   { date: "Vie 28/08", city: "Madrid → Londres", note: "Tin llega a Madrid 06:30 hs y continúa MAD → LHR, British Airways BA457 (10:35–12:00). Se reencuentra con Memi en Londres.", tag: "vuelo", accent: "london" },
@@ -65,7 +65,6 @@ const DESTINATIONS = [
     code: "HMDKECPZCY",
     extra: "Check-in martes 25/08 15:00 hs · Checkout martes 01/09 10:00 hs · 2 adultos",
     cost: "USD 989",
-    footnote: "El vuelo de Memi llega el 24/08 pero el check-in figura el 25/08 — conviene confirmar cómo se cubre esa primera noche.",
   },
   {
     city: "Mykonos",
@@ -158,8 +157,8 @@ const TRANSPORTS = [
   {
     route: "Buenos Aires (EZE) → Londres (LHR)",
     who: "Memi",
-    when: "Lunes 24/08/2026",
-    detail: "American Airlines · directo",
+    when: "Sale lunes 24/08 21:10 hs · Llega martes 25/08 por la noche",
+    detail: "American Airlines",
     platform: "American Airlines (directo)",
     code: "QTAULE",
     cost: "USD 778",

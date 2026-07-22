@@ -157,6 +157,64 @@ a { color: inherit; }
   font-size: 0.98rem;
 }
 
+/* ===== Mapa ===== */
+.map-wrap {
+  position: relative;
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  padding: 10px;
+}
+.map-blobs { position: absolute; inset: 0; z-index: 0; }
+.map-blob-a { width: 260px; height: 260px; background: var(--london-soft); top: -60px; left: -40px; position: absolute; border-radius: 50%; opacity: 0.6; }
+.map-blob-b { width: 240px; height: 240px; background: var(--mykonos-soft); bottom: -80px; right: 0; position: absolute; border-radius: 50%; opacity: 0.55; }
+.map-blob-c { width: 200px; height: 200px; background: var(--roma-soft); top: 40%; left: 40%; position: absolute; border-radius: 50%; opacity: 0.45; }
+.map-svg { position: relative; z-index: 1; width: 100%; height: auto; display: block; }
+
+.route-line {
+  fill: none;
+  stroke: var(--accent-color);
+  stroke-width: 2;
+  stroke-dasharray: 7 8;
+  stroke-linecap: round;
+  opacity: 0.75;
+}
+.route-line-short { stroke-width: 2.4; }
+.route-line-edge { stroke: var(--ink-soft); opacity: 0.4; stroke-width: 1.6; stroke-dasharray: 3 6; }
+.edge-label { font-size: 12px; fill: var(--ink-soft); font-family: "Work Sans", sans-serif; }
+
+.map-icon { color: var(--accent-color); fill: currentColor; stroke: none; }
+.map-icon path, .map-icon circle { fill: currentColor; }
+
+.map-pin .pin-halo { fill: var(--accent-soft); }
+.map-pin .pin-dot { fill: var(--accent-color); stroke: #fff; stroke-width: 2; }
+.map-pin .pin-order {
+  font-size: 9px;
+  font-weight: 600;
+  fill: #fff;
+  text-anchor: middle;
+  font-family: "Work Sans", sans-serif;
+  pointer-events: none;
+}
+.map-pin .pin-label {
+  font-family: "Fraunces", serif;
+  font-size: 17px;
+  fill: var(--ink);
+  font-weight: 500;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.map-legend span { display: flex; align-items: center; gap: 7px; }
+.map-legend svg { width: 18px; height: 18px; color: var(--ink-soft); flex-shrink: 0; }
+
 /* ===== Pendientes ===== */
 #pendientes { background: var(--alert-bg); border-radius: var(--radius-lg); margin: 20px 24px; }
 #pendientes .section-inner { padding: 10px 0 20px; }

@@ -9,16 +9,8 @@ const TRIP = {
 
 const PENDING = [
   {
-    title: "Alojamiento en Roma",
-    detail: "4 noches (06/09 al 10/09) sin hotel elegido todavía.",
-  },
-  {
     title: "Auto de alquiler en Puglia",
     detail: "Para moverse entre Bari y Ostuni (04/09 al 06/09). Todavía no se reservó ninguna empresa.",
-  },
-  {
-    title: "Alojamiento en Madrid",
-    detail: "2 noches (13/09 al 15/09) sin reserva concreta. Evaluando la zona de Chamberí.",
   },
 ];
 
@@ -114,13 +106,13 @@ const DESTINATIONS = [
     accent: "roma",
     icon: "roma",
     dates: "06/09 al 10/09 · 4 noches",
-    status: "pendiente",
-    name: "Sin hotel elegido todavía",
-    detail: "Falta buscar y reservar alojamiento.",
-    platform: null,
-    code: null,
+    status: "confirmado",
+    name: "Alojamiento en Roma",
+    detail: "Lungotevere dei Mellini, 24, Rome, Lazio 00193",
+    platform: "Airbnb",
+    code: "HMHSE9BRQP",
     extra: null,
-    cost: null,
+    cost: "USD 756",
   },
   {
     city: "París",
@@ -142,13 +134,13 @@ const DESTINATIONS = [
     accent: "madrid",
     icon: "madrid",
     dates: "13/09 al 15/09 · 2 noches",
-    status: "pendiente",
-    name: "Sin reserva concreta",
-    detail: "Evaluando la zona de Chamberí.",
-    platform: null,
-    code: null,
+    status: "confirmado",
+    name: "Alojamiento en Madrid",
+    detail: "Calle de Meléndez Valdés, 52, Madrid, Comunidad de Madrid 28015",
+    platform: "Airbnb",
+    code: "HM5PN8T3TB",
     extra: null,
-    cost: null,
+    cost: "USD 233",
   },
 ];
 
@@ -259,9 +251,11 @@ const EXPENSES = [
   { item: "Ostuni (estimado)", cost: 226 },
   { item: "Tren Bari-Roma", cost: 145 },
   { item: "Pasajes Roma-París", cost: 290 },
+  { item: "Hotel Roma", cost: 756 },
   { item: "Hotel París", cost: 700 },
   { item: "Pasaje París-Madrid", cost: 250 },
+  { item: "Hotel Madrid", cost: 233 },
   { item: "Vuelo Memi — vuelta (MAD-EZE)", cost: 659 },
 ];
 
-const EXPENSES_PENDING = ["Hotel en Roma", "Hotel en Madrid", "Auto de alquiler en Puglia"];
+const EXPENSES_PENDING = ["Auto de alquiler en Puglia"];
